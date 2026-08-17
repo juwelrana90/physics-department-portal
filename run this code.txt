@@ -1,0 +1,6 @@
+cd backend
+py -m venv .venv
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\.venv\Scripts\Activate.ps1
+python create_test_student.py
+uvicorn app.main:app --reload

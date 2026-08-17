@@ -1,0 +1,5 @@
+-- Development seed notes.
+-- Do NOT put real student passwords or personal information here.
+--
+-- A development admin/student seeding command will be added in the
+-- authentication milestone after the database migrations are introduced.

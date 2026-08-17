@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Environment/secrets
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test/coverage
+.coverage
+htmlcov/
+
+# Flutter
+frontend/mobile/.dart_tool/
+frontend/mobile/.packages
+frontend/mobile/build/
+frontend/mobile/.flutter-plugins
+frontend/mobile/.flutter-plugins-dependencies
+frontend/mobile/.pub-cache/
+frontend/mobile/android/.gradle/
+frontend/mobile/ios/Pods/
+
+# Local database dumps
+*.dump
+*.sql.gz
+
+# Generated files
+*.log
