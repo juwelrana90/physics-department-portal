@@ -9,7 +9,7 @@ from app.core.database import Base
 # Import all models so Alembic can detect them.
 from app.models.user import User
 from app.models.student import Student
-
+from app.models.academic_session import AcademicSession
 
 config = context.config
 
