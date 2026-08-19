@@ -12,6 +12,12 @@ class Student(Base):
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
     user_id: Mapped[int] = mapped_column(ForeignKey("users.id"), unique=True, index=True)
 
+    academic_session_id: Mapped[int] = mapped_column(
+        ForeignKey("academic_sessions.id"),
+        nullable=False,
+        index=True,
+    )
+
     nu_registration_number: Mapped[str] = mapped_column(
         String(50), unique=True, index=True
     )
