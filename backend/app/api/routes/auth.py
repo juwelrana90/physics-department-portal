@@ -94,6 +94,13 @@ def get_me(
             "batch": student.batch,
             "year_level": student.year_level,
             "section": student.section,
+            "academic_session": {
+                "id": student.academic_session.id,
+                "name": student.academic_session.name,
+                "start_year": student.academic_session.start_year,
+                "end_year": student.academic_session.end_year,
+                "is_active": student.academic_session.is_active,
+            },
         }
 
     return response
